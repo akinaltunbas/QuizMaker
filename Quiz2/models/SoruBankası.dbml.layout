@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="SoruBankası">
+  <DataContextMoniker Name="/SoruBankasıDataContext" />
+  <nestedChildShapes>
+    <classShape Id="4dbaf385-d64d-4695-8ef8-4b53e7d448c6" absoluteBounds="4, 3.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/SoruBankasıDataContext/Kategori" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c389ec8-d30e-44e3-a5ba-e9f36d509bd3" absoluteBounds="4.015, 4.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1f184720-1dc3-4bc3-94c2-3d99d21eac8c" absoluteBounds="1.375, 3.625, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/SoruBankasıDataContext/Seviye" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d7b0a220-8a76-4d03-bd93-e9a192793090" absoluteBounds="1.3900000000000001, 4.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="63b162dd-81a1-4999-865c-8b2f774b4b86" absoluteBounds="0.875, 0.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/SoruBankasıDataContext/KlasikSoru" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cbf0b808-9771-4734-9c6d-2df8fd4c7618" absoluteBounds="0.88999999999999968, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4 : 4.91274251302083); (1.09375 : 4.91274251302083); (1.09375 : 2.65549967447917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SoruBankasıDataContext/Kategori/Kategori_KlasikSoru" />
+      <nodes>
+        <classShapeMoniker Id="4dbaf385-d64d-4695-8ef8-4b53e7d448c6" />
+        <classShapeMoniker Id="63b162dd-81a1-4999-865c-8b2f774b4b86" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.125 : 3.625); (2.125 : 2.65549967447917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SoruBankasıDataContext/Seviye/Seviye_KlasikSoru" />
+      <nodes>
+        <classShapeMoniker Id="1f184720-1dc3-4bc3-94c2-3d99d21eac8c" />
+        <classShapeMoniker Id="63b162dd-81a1-4999-865c-8b2f774b4b86" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="519990c3-9224-46da-8850-34197b1f658b" absoluteBounds="3.125, 0.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/SoruBankasıDataContext/CoktanSecmeliSoru" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6fe44612-9f13-47dd-9fbb-154938c93fa4" absoluteBounds="3.14, 0.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.5625 : 3.75); (4.5625 : 3.23240397135417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SoruBankasıDataContext/Kategori/Kategori_CoktanSecmeliSoru" />
+      <nodes>
+        <classShapeMoniker Id="4dbaf385-d64d-4695-8ef8-4b53e7d448c6" />
+        <classShapeMoniker Id="519990c3-9224-46da-8850-34197b1f658b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.781252 : 3.625); (2.781252 : 3.50212); (3.00212 : 3.50212); (3.00212 : 1.86620198567708); (3.125 : 1.86620198567708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SoruBankasıDataContext/Seviye/Seviye_CoktanSecmeliSoru" />
+      <nodes>
+        <classShapeMoniker Id="1f184720-1dc3-4bc3-94c2-3d99d21eac8c" />
+        <classShapeMoniker Id="519990c3-9224-46da-8850-34197b1f658b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="02d8166b-2176-4427-a881-d5d47b52b312" absoluteBounds="5.5, 0.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/SoruBankasıDataContext/DogruYanlısSoru" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a3fe9167-7d96-43f9-9e68-71c2fb726ef4" absoluteBounds="5.5150000000000006, 0.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.75 : 3.75); (5.75 : 2.84780110677083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SoruBankasıDataContext/Kategori/Kategori_DogruYanlısSoru" />
+      <nodes>
+        <classShapeMoniker Id="4dbaf385-d64d-4695-8ef8-4b53e7d448c6" />
+        <classShapeMoniker Id="02d8166b-2176-4427-a881-d5d47b52b312" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.375 : 3.65625); (4.47916666666667 : 3.65625 : JumpStart); (4.64583333333333 : 3.65625 : JumpEnd); (5.66666666666667 : 3.65625 : JumpStart); (5.83333333333333 : 3.65625 : JumpEnd); (6.78125 : 3.65625); (6.78125 : 2.84780110677083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SoruBankasıDataContext/Seviye/Seviye_DogruYanlısSoru" />
+      <nodes>
+        <classShapeMoniker Id="1f184720-1dc3-4bc3-94c2-3d99d21eac8c" />
+        <classShapeMoniker Id="02d8166b-2176-4427-a881-d5d47b52b312" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

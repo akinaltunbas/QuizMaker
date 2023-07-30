@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SoruBankası" Class="SoruBankasıDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=AKIN\SQLEXPRESS;Initial Catalog=SoruBankası;Integrated Security=True" SettingsObjectName="Quiz2.Properties.Settings" SettingsPropertyName="SoruBankasıConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Kategori" Member="Kategoris">
+    <Type Name="Kategori">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Ad" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Kategori_KlasikSoru" Member="KlasikSorus" ThisKey="Id" OtherKey="KategoriId" Type="KlasikSoru" />
+      <Association Name="Kategori_CoktanSecmeliSoru" Member="CoktanSecmeliSorus" ThisKey="Id" OtherKey="KategoriId" Type="CoktanSecmeliSoru" />
+      <Association Name="Kategori_DogruYanlısSoru" Member="DogruYanlısSorus" ThisKey="Id" OtherKey="KategoriId" Type="DogruYanlısSoru" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Seviye" Member="Seviyes">
+    <Type Name="Seviye">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ZorlukDerecesi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Seviye_KlasikSoru" Member="KlasikSorus" ThisKey="Id" OtherKey="SeviyeId" Type="KlasikSoru" />
+      <Association Name="Seviye_CoktanSecmeliSoru" Member="CoktanSecmeliSorus" ThisKey="Id" OtherKey="SeviyeId" Type="CoktanSecmeliSoru" />
+      <Association Name="Seviye_DogruYanlısSoru" Member="DogruYanlısSorus" ThisKey="Id" OtherKey="SeviyeId" Type="DogruYanlısSoru" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KlasikSoru" Member="KlasikSorus">
+    <Type Name="KlasikSoru">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KategoriId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SeviyeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SoruMetni" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="CevapMetni" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Doğrucevap" Type="System.String" DbType="NChar(250)" CanBeNull="true" />
+      <Column Name="Puan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Kategori_KlasikSoru" Member="Kategori" ThisKey="KategoriId" OtherKey="Id" Type="Kategori" IsForeignKey="true" />
+      <Association Name="Seviye_KlasikSoru" Member="Seviye" ThisKey="SeviyeId" OtherKey="Id" Type="Seviye" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CoktanSecmeliSoru" Member="CoktanSecmeliSorus">
+    <Type Name="CoktanSecmeliSoru">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KategoriId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SeviyeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SoruMetni" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="A" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="B" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="C" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="D" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DogruCevap" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Puan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Kategori_CoktanSecmeliSoru" Member="Kategori" ThisKey="KategoriId" OtherKey="Id" Type="Kategori" IsForeignKey="true" />
+      <Association Name="Seviye_CoktanSecmeliSoru" Member="Seviye" ThisKey="SeviyeId" OtherKey="Id" Type="Seviye" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DogruYanlısSoru" Member="DogruYanlısSorus">
+    <Type Name="DogruYanlısSoru">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KategoriId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SeviyeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SoruMetni" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Dogru" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Yanlıs" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DogruCevap" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Puan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Kategori_DogruYanlısSoru" Member="Kategori" ThisKey="KategoriId" OtherKey="Id" Type="Kategori" IsForeignKey="true" />
+      <Association Name="Seviye_DogruYanlısSoru" Member="Seviye" ThisKey="SeviyeId" OtherKey="Id" Type="Seviye" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

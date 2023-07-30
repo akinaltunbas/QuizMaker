@@ -1,0 +1,19 @@
+C:\Users\akin-\OneDrive\Belgeler\Visual Studio 2010\Projects\Quiz2\Quiz2\bin\Debug\Quiz2.exe.config
+C:\Users\akin-\OneDrive\Belgeler\Visual Studio 2010\Projects\Quiz2\Quiz2\obj\Debug\Quiz2.Form1.resources
+C:\Users\akin-\OneDrive\Belgeler\Visual Studio 2010\Projects\Quiz2\Quiz2\obj\Debug\Quiz2.views.KategoriForm.resources
+C:\Users\akin-\OneDrive\Belgeler\Visual Studio 2010\Projects\Quiz2\Quiz2\obj\Debug\Quiz2.Properties.Resources.resources
+C:\Users\akin-\OneDrive\Belgeler\Visual Studio 2010\Projects\Quiz2\Quiz2\obj\Debug\Quiz2.csproj.GenerateResource.Cache
+C:\Users\akin-\OneDrive\Belgeler\Visual Studio 2010\Projects\Quiz2\Quiz2\obj\Debug\Quiz2.exe.licenses
+C:\Users\akin-\OneDrive\Belgeler\Visual Studio 2010\Projects\Quiz2\Quiz2\bin\Debug\Quiz2.exe
+C:\Users\akin-\OneDrive\Belgeler\Visual Studio 2010\Projects\Quiz2\Quiz2\bin\Debug\Quiz2.pdb
+C:\Users\akin-\OneDrive\Belgeler\Visual Studio 2010\Projects\Quiz2\Quiz2\obj\Debug\Quiz2.exe
+C:\Users\akin-\OneDrive\Belgeler\Visual Studio 2010\Projects\Quiz2\Quiz2\obj\Debug\Quiz2.pdb
+C:\Users\akin-\OneDrive\Belgeler\Visual Studio 2010\Projects\Quiz2\Quiz2\obj\Debug\Quiz2.csprojResolveAssemblyReference.cache
+C:\Users\akin-\OneDrive\Belgeler\Visual Studio 2010\Projects\Quiz2\Quiz2\obj\Debug\Quiz2.views.SeviyeForm.resources
+C:\Users\akin-\OneDrive\Belgeler\Visual Studio 2010\Projects\Quiz2\Quiz2\obj\Debug\Quiz2.views.KlasikSoruForm.resources
+C:\Users\akin-\OneDrive\Belgeler\Visual Studio 2010\Projects\Quiz2\Quiz2\obj\Debug\Quiz2.views.CoktanSecmeliSoruForm.resources
+C:\Users\akin-\OneDrive\Belgeler\Visual Studio 2010\Projects\Quiz2\Quiz2\obj\Debug\Quiz2.views.DogruYanlısSoruForm.resources
+C:\Users\akin-\OneDrive\Belgeler\Visual Studio 2010\Projects\Quiz2\Quiz2\obj\Debug\Quiz2.views.SınavOlusturForm.resources
+C:\Users\akin-\OneDrive\Masaüstü\TasarımProje\Quiz2\Quiz2\bin\Debug\Quiz2.exe.config
+C:\Users\akin-\OneDrive\Masaüstü\TasarımProje\Quiz2\Quiz2\obj\Debug\Quiz2.exe
+C:\Users\akin-\OneDrive\Masaüstü\TasarımProje\Quiz2\Quiz2\obj\Debug\Quiz2.pdb

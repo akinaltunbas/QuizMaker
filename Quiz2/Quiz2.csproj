@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A4BFA44E-421F-4D18-954D-13DCEF3C8442}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Quiz2</RootNamespace>
+    <AssemblyName>Quiz2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.2" />
+    <Reference Include="DevExpress.Data.v17.2" />
+    <Reference Include="DevExpress.Printing.v17.2.Core" />
+    <Reference Include="DevExpress.Utils.v17.2" />
+    <Reference Include="DevExpress.XtraBars.v17.2" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core" />
+    <Reference Include="DevExpress.XtraEditors.v17.2" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="models\SoruBankası.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoruBankası.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="presenters\CoktanSecmeliSoruPresenter.cs" />
+    <Compile Include="presenters\DogruYanlısSoruPresenter.cs" />
+    <Compile Include="presenters\KategoriPresenter.cs" />
+    <Compile Include="presenters\KlasikSoruPresenter.cs" />
+    <Compile Include="presenters\SeviyePresenter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoruBankasıDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoruBankasıDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoruBankasıDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoruBankasıDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoruBankasıDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoruBankasıDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="views\CoktanSecmeliSoruForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\CoktanSecmeliSoruForm.Designer.cs">
+      <DependentUpon>CoktanSecmeliSoruForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\DogruYanlısSoruForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\DogruYanlısSoruForm.Designer.cs">
+      <DependentUpon>DogruYanlısSoruForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\ICoktanSecmeliSoruView.cs" />
+    <Compile Include="views\IDogruYanlısSoruView.cs" />
+    <Compile Include="views\IKategoriView.cs" />
+    <Compile Include="views\IKlasikSoruView.cs" />
+    <Compile Include="views\ISeviyeView.cs" />
+    <Compile Include="views\ISınavOlusturView.cs" />
+    <Compile Include="views\KategoriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\KlasikSoruForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\KlasikSoruForm.Designer.cs">
+      <DependentUpon>KlasikSoruForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\SeviyeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\SeviyeForm.Designer.cs">
+      <DependentUpon>SeviyeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\SınavOlusturForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\SınavOlusturForm.Designer.cs">
+      <DependentUpon>SınavOlusturForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\CoktanSecmeliSoruForm.resx">
+      <DependentUpon>CoktanSecmeliSoruForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\DogruYanlısSoruForm.resx">
+      <DependentUpon>DogruYanlısSoruForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\KategoriForm.resx">
+      <DependentUpon>KategoriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\KlasikSoruForm.resx">
+      <DependentUpon>KlasikSoruForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\SeviyeForm.resx">
+      <DependentUpon>SeviyeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\SınavOlusturForm.resx">
+      <DependentUpon>SınavOlusturForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="models\SoruBankası.dbml.layout">
+      <DependentUpon>SoruBankası.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="models\SoruBankası.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>SoruBankası.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SoruBankasıDataSet.xsc">
+      <DependentUpon>SoruBankasıDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SoruBankasıDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoruBankasıDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoruBankasıDataSet.xss">
+      <DependentUpon>SoruBankasıDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SoruBankasıDataSet1.xsc">
+      <DependentUpon>SoruBankasıDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SoruBankasıDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoruBankasıDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoruBankasıDataSet1.xss">
+      <DependentUpon>SoruBankasıDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SoruBankasıDataSet2.xsc">
+      <DependentUpon>SoruBankasıDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SoruBankasıDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoruBankasıDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoruBankasıDataSet2.xss">
+      <DependentUpon>SoruBankasıDataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
